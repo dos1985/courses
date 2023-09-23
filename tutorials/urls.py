@@ -24,12 +24,9 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Your API",
+        title="API для управления продуктами",
         default_version='v1',
-        description="Test description",
-        terms_of_service="https://www.yourapp.com/terms/",
-        contact=openapi.Contact(email="contact@yourapp.com"),
-        license=openapi.License(name="Your License"),
+        description="Это REST API для управления продуктами и уроками в нашем образовательном приложении",
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
